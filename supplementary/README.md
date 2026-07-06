@@ -4,9 +4,10 @@ This directory holds the machine-readable evaluation artifacts referenced by the
 Reproducibility Statement. Human-readable versions (transcripts, scoring tables, traces,
 iteration log) are Appendices B–G of the paper itself.
 
-## Manifest: copy these from the evaluation environment
 
-From `~/shikshya-v1.0/backend/eval_scripts/` on the evaluation machine:
+
+## File manifest
+
 
 | File | Contents | Paper reference |
 |---|---|---|
@@ -24,14 +25,13 @@ From `~/shikshya-v1.0/backend/eval_scripts/` on the evaluation machine:
 | `naive_vs_gated_results.json` | Comparison raw outputs | Appendix F |
 | `multisession_results.json` | Multi-session raw outputs | Appendix F |
 
-## Redaction check before committing
+## Data and redaction notes
 
-The test corpus is fully synthetic (Appendix B) and contains no user data. Before
-committing, verify no file references live infrastructure secrets:
+The test corpus is fully synthetic (paper, Appendix B) and contains no user data.
+The scripts reference internal module paths (`api.tasks.chat_memory`, etc.); these
+are import names only.
 
-```bash
-grep -rn "api_key\|API_KEY\|secret\|password\|Bearer " supplementary/ || echo "clean"
-```
-
-The scripts reference internal module paths (`api.tasks.chat_memory`, etc.); these are
-import names only and are expected.
+One redaction: the test-user password in `s55a_setup.py` has been replaced with
+a placeholder (`CHANGE_ME_EVAL_PASSWORD`); substitute any value when reproducing.
+The account it creates existed only in a local evaluation database and was
+deleted after the evaluation.
