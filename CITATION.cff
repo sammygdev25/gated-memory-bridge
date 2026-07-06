@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A Gated Architecture for Safe Cross-Session Memory in AI Coding Agents"
+authors:
+  - family-names: "Gurung"
+    given-names: "Sam"
+    affiliation: "ArtixNature Lab, San Francisco, CA"
+date-released: 2026-07-06
+version: "1.0"
+license: CC-BY-4.0
+type: article
+abstract: "AI coding agents pair conversational interfaces with code-generation pipelines, two subsystems with conflicting context requirements. We formalize context poisoning, propose the gated memory bridge (Memory PR model), implement its extraction and validation layers in a production system, and report a controlled evaluation including two pre-registered null results and a quantitative measurement of the proposer-reviewer conflict in LLM self-assessment."
