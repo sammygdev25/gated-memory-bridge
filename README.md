@@ -2,7 +2,7 @@
 
 **Sam Gurung** · ArtixNature Lab, San Francisco, CA · July 2026
 
-📄 **[Read the paper (PDF)](paper/gated-memory-bridge-v1.pdf)** · Status: **Preprint, v1 (July 2026)**
+📄 **[Read the paper (PDF)](gated-memory-bridge-sam-gurung-v1.pdf)** · Status: **Preprint, v1 (July 2026)**
 
 ## TL;DR
 
@@ -27,7 +27,7 @@ The headline is not the 100% precision. It is that the model **understood the us
 
 ```
 paper/
-  gated-memory-bridge-v1.pdf     # the paper (v1 preprint)
+  gated-memory-bridge-sam-gurung-v1.pdf   # the paper (v1 preprint)
   source/                        # editable source (docx)
 supplementary/
   README.md                      # manifest of evaluation materials
@@ -45,7 +45,7 @@ Full test-session transcripts, ground-truth labels, scoring tables, the superses
   year    = {2026},
   month   = {July},
   note    = {Preprint},
-  url     = {https://github.com/USERNAME/gated-memory-bridge}
+  url     = {https://github.com/sammygdev25/gated-memory-bridge}
 }
 ```
 
