@@ -1,0 +1,78 @@
+{
+  "token_economy": {
+    "naive_chars": 3329,
+    "naive_tokens_est": 832,
+    "gated_chars": 391,
+    "gated_tokens_est": 97,
+    "ratio": 8.6
+  },
+  "naive": {
+    "models": [
+      "User",
+      "UserProfile",
+      "MenuItem",
+      "MenuCategory",
+      "Reservation",
+      "Token",
+      "RefreshToken"
+    ],
+    "components": [
+      "Header",
+      "MenuGrid",
+      "MenuCard",
+      "MenuCategoryFilter",
+      "ReservationForm",
+      "LoginForm",
+      "RegisterForm",
+      "AuthProvider",
+      "PrivateRoute",
+      "Navbar",
+      "Footer"
+    ],
+    "ecommerce_bleed": [],
+    "auth_bleed": []
+  },
+  "gated": {
+    "models": [
+      "User",
+      "UserProfile",
+      "RefreshToken",
+      "MenuItem",
+      "MenuCategory",
+      "Reservation",
+      "Table",
+      "Order",
+      "OrderItem",
+      "Review"
+    ],
+    "components": [
+      "App",
+      "Header",
+      "Footer",
+      "MenuGrid",
+      "MenuCard",
+      "MenuCategoryFilter",
+      "ReservationForm",
+      "LoginForm",
+      "RegisterForm",
+      "AuthModal",
+      "PrivateRoute",
+      "HomePage",
+      "MenuPage",
+      "ReservationPage",
+      "ProfilePage",
+      "OrderSummary",
+      "ReviewSection",
+      "Navbar",
+      "HeroSection",
+      "LoadingSpinner",
+      "AlertMessage"
+    ],
+    "ecommerce_bleed": [
+      "order",
+      "orderitem",
+      "ordersummary"
+    ],
+    "auth_bleed": []
+  }
+}

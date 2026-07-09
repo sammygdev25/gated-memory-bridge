@@ -1,0 +1,224 @@
+{
+  "A": {
+    "naive": {
+      "models": [
+        "User",
+        "MenuItem",
+        "Category",
+        "Reservation"
+      ],
+      "components": [
+        "Header",
+        "MenuGrid",
+        "MenuCard",
+        "ReservationForm",
+        "Login",
+        "Register",
+        "Navbar",
+        "Footer"
+      ],
+      "total": 12,
+      "noise": [
+        "category"
+      ],
+      "noise_count": 1
+    },
+    "gated": {
+      "models": [
+        "User",
+        "Token",
+        "MenuItem",
+        "MenuCategory",
+        "Reservation",
+        "Table"
+      ],
+      "components": [
+        "Header",
+        "MenuGrid",
+        "ReservationForm",
+        "LoginForm",
+        "RegisterForm",
+        "NavBar",
+        "MenuCard",
+        "MenuCategoryFilter",
+        "ReservationList",
+        "ReservationCard",
+        "PrivateRoute",
+        "AuthProvider",
+        "TokenRefreshHandler",
+        "Footer",
+        "LoadingSpinner",
+        "AlertMessage"
+      ],
+      "total": 22,
+      "noise": [
+        "menucategory",
+        "menucategoryfilter"
+      ],
+      "noise_count": 2
+    }
+  },
+  "B": {
+    "naive": {
+      "models": [
+        "User",
+        "Product",
+        "Category",
+        "ProductImage",
+        "Cart",
+        "CartItem",
+        "Order",
+        "OrderItem",
+        "Payment",
+        "Address",
+        "Review"
+      ],
+      "components": [
+        "App",
+        "Navbar",
+        "Footer",
+        "ProductCard",
+        "ProductList",
+        "ProductDetail",
+        "ProductImageGallery",
+        "CategoryFilter",
+        "SearchBar",
+        "CartIcon",
+        "CartDrawer",
+        "CartItem",
+        "CartSummary",
+        "CheckoutForm",
+        "CheckoutPage",
+        "PaymentForm",
+        "OrderConfirmation",
+        "OrderHistory",
+        "OrderDetail",
+        "UserProfile",
+        "LoginForm",
+        "RegisterForm",
+        "AddressForm",
+        "HomePage",
+        "ShopPage",
+        "useCart",
+        "useAuth",
+        "useProducts",
+        "StripeProvider"
+      ],
+      "total": 40,
+      "noise": [
+        "category",
+        "categoryfilter"
+      ],
+      "noise_count": 2
+    },
+    "gated": {
+      "models": [
+        "Product",
+        "Category",
+        "Order",
+        "OrderItem",
+        "Customer",
+        "Payment"
+      ],
+      "components": [
+        "ProductCard",
+        "ProductList",
+        "ProductDetail",
+        "Cart",
+        "CartItem",
+        "CartSummary",
+        "Checkout",
+        "CheckoutForm",
+        "PaymentForm",
+        "OrderConfirmation",
+        "OrderHistory",
+        "OrderDetail",
+        "Navbar",
+        "Footer",
+        "CategoryFilter",
+        "SearchBar",
+        "HomePage",
+        "ShopPage",
+        "CartPage",
+        "CheckoutPage",
+        "AccountPage"
+      ],
+      "total": 27,
+      "noise": [
+        "category",
+        "categoryfilter"
+      ],
+      "noise_count": 2
+    }
+  },
+  "C": {
+    "naive": {
+      "models": [],
+      "components": [],
+      "total": 0,
+      "noise": [],
+      "noise_count": 0
+    },
+    "gated": {
+      "models": [
+        "Item"
+      ],
+      "components": [
+        "App",
+        "ItemList",
+        "ItemForm"
+      ],
+      "total": 4,
+      "noise": [],
+      "noise_count": 0
+    }
+  },
+  "D": {
+    "naive": {
+      "models": [
+        "Topic",
+        "Conversation",
+        "Message",
+        "TechConcept",
+        "ConceptCategory",
+        "RelatedConcept"
+      ],
+      "components": [
+        "App",
+        "ConversationList",
+        "ConversationDetail",
+        "MessageBubble",
+        "MessageInput",
+        "TopicSidebar",
+        "TopicCard",
+        "ConceptExplorer",
+        "ConceptDetail",
+        "RelatedConceptsList",
+        "CategoryFilter",
+        "SearchBar",
+        "NavigationHeader",
+        "LoadingSpinner",
+        "ErrorMessage"
+      ],
+      "total": 21,
+      "noise": [
+        "conceptcategory",
+        "categoryfilter"
+      ],
+      "noise_count": 2
+    },
+    "gated": {
+      "models": [
+        "Item"
+      ],
+      "components": [
+        "App",
+        "ItemList",
+        "ItemForm"
+      ],
+      "total": 4,
+      "noise": [],
+      "noise_count": 0
+    }
+  }
+}

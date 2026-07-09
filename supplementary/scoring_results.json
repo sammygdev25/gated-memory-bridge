@@ -1,0 +1,517 @@
+{
+  "per_session": {
+    "A": [
+      {
+        "run": 1,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "A1",
+            "gt_desc": "blue header + menu grid",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          },
+          {
+            "gt_id": "A2",
+            "gt_desc": "JWT auth",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      },
+      {
+        "run": 2,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "A1",
+            "gt_desc": "blue header + menu grid",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          },
+          {
+            "gt_id": "A2",
+            "gt_desc": "JWT auth",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 1,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      },
+      {
+        "run": 3,
+        "proposal_count": 3,
+        "matched": [
+          {
+            "gt_id": "A1",
+            "gt_desc": "blue header + menu grid",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          },
+          {
+            "gt_id": "A2",
+            "gt_desc": "JWT auth",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "A3",
+            "gt_desc": "ReservationForm",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 3,
+        "type_lenient": 3,
+        "conf_raw_correct": 1,
+        "conf_enforced_correct": 3,
+        "provenance_pass": 3,
+        "provenance_fail": 0
+      }
+    ],
+    "B": [
+      {
+        "run": 1,
+        "proposal_count": 4,
+        "matched": [
+          {
+            "gt_id": "B1",
+            "gt_desc": "/api/v1/ prefix",
+            "extracted_type": "project_convention",
+            "expected_type": "project_convention"
+          },
+          {
+            "gt_id": "B2",
+            "gt_desc": "Stripe payments",
+            "extracted_type": "dependency_preference",
+            "expected_type": "dependency_preference"
+          },
+          {
+            "gt_id": "B3",
+            "gt_desc": "ProductCard component",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          },
+          {
+            "gt_id": "B4",
+            "gt_desc": "localStorage cart",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 4,
+        "type_lenient": 4,
+        "conf_raw_correct": 2,
+        "conf_enforced_correct": 4,
+        "provenance_pass": 4,
+        "provenance_fail": 0
+      },
+      {
+        "run": 2,
+        "proposal_count": 4,
+        "matched": [
+          {
+            "gt_id": "B1",
+            "gt_desc": "/api/v1/ prefix",
+            "extracted_type": "project_convention",
+            "expected_type": "project_convention"
+          },
+          {
+            "gt_id": "B2",
+            "gt_desc": "Stripe payments",
+            "extracted_type": "dependency_preference",
+            "expected_type": "dependency_preference"
+          },
+          {
+            "gt_id": "B3",
+            "gt_desc": "ProductCard component",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          },
+          {
+            "gt_id": "B4",
+            "gt_desc": "localStorage cart",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 4,
+        "type_lenient": 4,
+        "conf_raw_correct": 3,
+        "conf_enforced_correct": 4,
+        "provenance_pass": 4,
+        "provenance_fail": 0
+      },
+      {
+        "run": 3,
+        "proposal_count": 4,
+        "matched": [
+          {
+            "gt_id": "B1",
+            "gt_desc": "/api/v1/ prefix",
+            "extracted_type": "tech_decision",
+            "expected_type": "project_convention"
+          },
+          {
+            "gt_id": "B2",
+            "gt_desc": "Stripe payments",
+            "extracted_type": "dependency_preference",
+            "expected_type": "dependency_preference"
+          },
+          {
+            "gt_id": "B3",
+            "gt_desc": "ProductCard component",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          },
+          {
+            "gt_id": "B4",
+            "gt_desc": "localStorage cart",
+            "extracted_type": "project_convention",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 4,
+        "conf_raw_correct": 2,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 4,
+        "provenance_fail": 0
+      }
+    ],
+    "C": [
+      {
+        "run": 1,
+        "proposal_count": 0,
+        "matched": [],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 0,
+        "type_lenient": 0,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 0,
+        "provenance_pass": 0,
+        "provenance_fail": 0
+      },
+      {
+        "run": 2,
+        "proposal_count": 0,
+        "matched": [],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 0,
+        "type_lenient": 0,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 0,
+        "provenance_pass": 0,
+        "provenance_fail": 0
+      },
+      {
+        "run": 3,
+        "proposal_count": 0,
+        "matched": [],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 0,
+        "type_lenient": 0,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 0,
+        "provenance_pass": 0,
+        "provenance_fail": 0
+      }
+    ],
+    "D": [
+      {
+        "run": 1,
+        "proposal_count": 0,
+        "matched": [],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 0,
+        "type_lenient": 0,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 0,
+        "provenance_pass": 0,
+        "provenance_fail": 0
+      },
+      {
+        "run": 2,
+        "proposal_count": 0,
+        "matched": [],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 0,
+        "type_lenient": 0,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 0,
+        "provenance_pass": 0,
+        "provenance_fail": 0
+      },
+      {
+        "run": 3,
+        "proposal_count": 0,
+        "matched": [],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 0,
+        "type_lenient": 0,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 0,
+        "provenance_pass": 0,
+        "provenance_fail": 0
+      }
+    ],
+    "E1": [
+      {
+        "run": 1,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "E1a",
+            "gt_desc": "session-based auth",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "E1b",
+            "gt_desc": "login page design",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 1,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      },
+      {
+        "run": 2,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "E1a",
+            "gt_desc": "session-based auth",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "E1b",
+            "gt_desc": "login page design",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      },
+      {
+        "run": 3,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "E1a",
+            "gt_desc": "session-based auth",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "E1b",
+            "gt_desc": "login page design",
+            "extracted_type": "design_reference",
+            "expected_type": "design_reference"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 1,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      }
+    ],
+    "E2": [
+      {
+        "run": 1,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "E2a",
+            "gt_desc": "JWT switch",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "E2b",
+            "gt_desc": "refresh tokens",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      },
+      {
+        "run": 2,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "E2a",
+            "gt_desc": "JWT switch",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "E2b",
+            "gt_desc": "refresh tokens",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      },
+      {
+        "run": 3,
+        "proposal_count": 2,
+        "matched": [
+          {
+            "gt_id": "E2a",
+            "gt_desc": "JWT switch",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          },
+          {
+            "gt_id": "E2b",
+            "gt_desc": "refresh tokens",
+            "extracted_type": "tech_decision",
+            "expected_type": "tech_decision"
+          }
+        ],
+        "unmatched": [],
+        "noise": [],
+        "type_strict": 2,
+        "type_lenient": 2,
+        "conf_raw_correct": 0,
+        "conf_enforced_correct": 2,
+        "provenance_pass": 2,
+        "provenance_fail": 0
+      }
+    ]
+  },
+  "aggregate": {
+    "total_proposals": 31,
+    "correct": 31,
+    "noise": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "type_strict": 0.9355,
+    "type_lenient": 1.0,
+    "conf_raw": 0.3548,
+    "conf_enforced": 0.9355,
+    "provenance_rate": 1.0
+  },
+  "per_item_recall": {
+    "A1": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "blue header + menu grid"
+    },
+    "A2": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "JWT auth"
+    },
+    "A3": {
+      "hits": 1,
+      "possible": 3,
+      "desc": "ReservationForm"
+    },
+    "B1": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "/api/v1/ prefix"
+    },
+    "B2": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "Stripe payments"
+    },
+    "B3": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "ProductCard component"
+    },
+    "B4": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "localStorage cart"
+    },
+    "E1a": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "session-based auth"
+    },
+    "E1b": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "login page design"
+    },
+    "E2a": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "JWT switch"
+    },
+    "E2b": {
+      "hits": 3,
+      "possible": 3,
+      "desc": "refresh tokens"
+    }
+  }
+}

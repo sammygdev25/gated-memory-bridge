@@ -1,0 +1,916 @@
+{
+  "A": {
+    "ground_truth": {
+      "expected_min": 2,
+      "expected_max": 3,
+      "decisions": [
+        "design_reference: blue header + menu grid + ReservationForm",
+        "tech_decision: JWT auth"
+      ],
+      "noise_items": [
+        "quantum physics",
+        "sunset image",
+        "dinner suggestion"
+      ]
+    },
+    "runs": [
+      {
+        "run": 1,
+        "msg_count": 14,
+        "elapsed_s": 3.64,
+        "cost_est": 0.00368,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "design_reference",
+            "confidence": "auto",
+            "source_quote": "Make the header blue with a 3-column menu grid for the main page",
+            "data": {
+              "components": [
+                "Header",
+                "MenuGrid",
+                "ReservationForm"
+              ],
+              "description": "Header with blue background. Main page contains a 3-column responsive menu grid and reservation form.",
+              "color_scheme": {
+                "primary": "blue",
+                "bg": ""
+              }
+            },
+            "description": "Blue header with 3-column menu grid layout for TastyBites main page."
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Use JWT authentication for this project",
+            "data": {
+              "decision": "Implement JWT-based authentication with token refresh",
+              "rationale": "User explicitly selected JWT for TastyBites authentication",
+              "topic": "auth"
+            },
+            "description": "JWT authentication with token refresh for TastyBites user sessions."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "Building TastyBites, a restaurant app with a blue header, 3-column menu grid on the main page, JWT-based authentication with token refresh, and a ReservationForm component for booking reservations.",
+          "user_facts": [],
+          "key_facts": [
+            "JWT authentication selected for TastyBites",
+            "Blue header with 3-column menu grid design",
+            "ReservationForm component added"
+          ],
+          "pending_items": [
+            "Implement JWT token refresh mechanism",
+            "Build responsive 3-column menu grid layout",
+            "Complete ReservationForm with date, time, party size fields"
+          ]
+        }
+      },
+      {
+        "run": 2,
+        "msg_count": 14,
+        "elapsed_s": 2.95,
+        "cost_est": 0.00368,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "design_reference",
+            "confidence": "confirm",
+            "source_quote": "Make the header blue with a 3-column menu grid for the main page",
+            "data": {
+              "components": [
+                "Header",
+                "MenuGrid",
+                "ReservationForm"
+              ],
+              "description": "3-column responsive menu grid layout with header at top",
+              "color_scheme": {
+                "primary": "blue",
+                "bg": ""
+              }
+            },
+            "description": "Blue header with 3-column menu grid for TastyBites main page"
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Use JWT authentication for this project",
+            "data": {
+              "decision": "JWT-based authentication with token refresh",
+              "rationale": "user explicitly selected JWT for TastyBites",
+              "topic": "auth"
+            },
+            "description": "Implement JWT authentication with token refresh mechanism"
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "TastyBites is a restaurant app with a blue header, 3-column menu grid on the main page, JWT-based authentication with token refresh, and a ReservationForm component for booking reservations.",
+          "user_facts": [],
+          "key_facts": [
+            "building restaurant app called TastyBites",
+            "JWT authentication with token refresh",
+            "3-column menu grid layout",
+            "blue header color scheme"
+          ],
+          "pending_items": [
+            "implement filtering for menu grid",
+            "complete ReservationForm component details (date, time, party size fields)"
+          ]
+        }
+      },
+      {
+        "run": 3,
+        "msg_count": 14,
+        "elapsed_s": 3.28,
+        "cost_est": 0.00368,
+        "proposal_count": 3,
+        "proposals": [
+          {
+            "type": "design_reference",
+            "confidence": "confirm",
+            "source_quote": "Make the header blue with a 3-column menu grid for the main page",
+            "data": {
+              "components": [
+                "Header",
+                "MenuGrid"
+              ],
+              "description": "Header with 3-column responsive menu grid layout for main page",
+              "color_scheme": {
+                "primary": "blue",
+                "bg": ""
+              }
+            },
+            "description": "Blue header with 3-column MenuGrid for the main page"
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Use JWT authentication for this project",
+            "data": {
+              "decision": "Implement JWT-based authentication with token refresh",
+              "rationale": "Stateless authentication suitable for modern restaurant app",
+              "topic": "auth"
+            },
+            "description": "JWT authentication with token refresh mechanism"
+          },
+          {
+            "type": "design_reference",
+            "confidence": "auto",
+            "source_quote": "Back to the restaurant app, also add a reservation form component",
+            "data": {
+              "components": [
+                "ReservationForm"
+              ],
+              "description": "Form component for restaurant reservations with date, time, and party size fields",
+              "color_scheme": {
+                "primary": "",
+                "bg": ""
+              }
+            },
+            "description": "ReservationForm component for booking dates, times, and party sizes"
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "Building TastyBites, a restaurant app with a blue header, 3-column menu grid on the main page, JWT-based authentication with token refresh, and a ReservationForm component for booking.",
+          "user_facts": [],
+          "key_facts": [
+            "JWT authentication with token refresh",
+            "Blue header with 3-column menu grid",
+            "ReservationForm component added"
+          ],
+          "pending_items": []
+        }
+      }
+    ]
+  },
+  "B": {
+    "ground_truth": {
+      "expected_min": 3,
+      "expected_max": 4,
+      "decisions": [
+        "project_convention: /api/v1/ prefix",
+        "dependency_preference: Stripe",
+        "design_reference: ProductCard",
+        "tech_decision (borderline): localStorage cart"
+      ],
+      "noise_items": [
+        "hiking trails",
+        "Tokyo weather"
+      ]
+    },
+    "runs": [
+      {
+        "run": 1,
+        "msg_count": 14,
+        "elapsed_s": 4.17,
+        "cost_est": 0.00368,
+        "proposal_count": 4,
+        "proposals": [
+          {
+            "type": "project_convention",
+            "confidence": "auto",
+            "source_quote": "All endpoints should use the /api/v1/ prefix for versioning",
+            "data": {
+              "pattern": "All API endpoints prefixed with /api/v1/",
+              "scope": "api"
+            },
+            "description": "API route versioning convention using /api/v1/ prefix for all endpoints."
+          },
+          {
+            "type": "dependency_preference",
+            "confidence": "auto",
+            "source_quote": "Use Stripe for payment processing, it has the best developer experience",
+            "data": {
+              "package": "stripe",
+              "reason": "Best developer experience for payment processing"
+            },
+            "description": "Stripe selected as the payment processing provider."
+          },
+          {
+            "type": "design_reference",
+            "confidence": "auto",
+            "source_quote": "The product card should show image, title, price, and add-to-cart button",
+            "data": {
+              "components": [
+                "ProductCard"
+              ],
+              "description": "Displays product information vertically with image at top, followed by title, price, and add-to-cart button.",
+              "color_scheme": {
+                "primary": null,
+                "bg": null
+              }
+            },
+            "description": "ProductCard component structure with image, title, price, and add-to-cart button elements."
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Also make sure the cart persists across page refreshes using localStorage",
+            "data": {
+              "decision": "Implement cart persistence using browser localStorage",
+              "rationale": "Maintain cart state across page refreshes for better user experience",
+              "topic": "caching"
+            },
+            "description": "Cart state persisted to localStorage to survive page refreshes."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "ShopWave is an e-commerce platform with API endpoints prefixed at /api/v1/, Stripe integration for payment processing, and a ProductCard component displaying image, title, price, and add-to-cart button. Cart state persists across page refreshes using localStorage.",
+          "user_facts": [
+            "Prefers Stripe for payment processing due to developer experience",
+            "Values API versioning best practices",
+            "Interested in hiking (mentioned San Francisco trails)"
+          ],
+          "key_facts": [
+            "API versioning with /api/v1/ prefix",
+            "Stripe payment integration",
+            "ProductCard component with image, title, price, add-to-cart",
+            "localStorage cart persistence"
+          ],
+          "pending_items": []
+        }
+      },
+      {
+        "run": 2,
+        "msg_count": 14,
+        "elapsed_s": 4.14,
+        "cost_est": 0.00368,
+        "proposal_count": 4,
+        "proposals": [
+          {
+            "type": "project_convention",
+            "confidence": "auto",
+            "source_quote": "All endpoints should use the /api/v1/ prefix for versioning",
+            "data": {
+              "pattern": "All API endpoints prefixed with /api/v1/",
+              "scope": "api"
+            },
+            "description": "Establish API versioning convention using /api/v1/ prefix for all endpoints."
+          },
+          {
+            "type": "dependency_preference",
+            "confidence": "auto",
+            "source_quote": "Use Stripe for payment processing, it has the best developer experience",
+            "data": {
+              "package": "stripe",
+              "reason": "Best developer experience for payment processing"
+            },
+            "description": "Integrate Stripe as the payment processor for ShopWave."
+          },
+          {
+            "type": "design_reference",
+            "confidence": "confirm",
+            "source_quote": "The product card should show image, title, price, and add-to-cart button",
+            "data": {
+              "components": [
+                "ProductCard"
+              ],
+              "description": "Card component displaying product information with action button",
+              "color_scheme": {}
+            },
+            "description": "ProductCard component with image, title, price, and add-to-cart button."
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Also make sure the cart persists across page refreshes using localStorage",
+            "data": {
+              "decision": "Implement cart persistence using browser localStorage",
+              "rationale": "Maintain cart state across page refreshes without server dependency",
+              "topic": "caching"
+            },
+            "description": "Use localStorage to persist shopping cart across page refreshes."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "ShopWave is an e-commerce platform configured with /api/v1/ endpoint versioning, Stripe payment processing integration, a ProductCard component displaying image, title, price, and add-to-cart button, and cart persistence via localStorage.",
+          "user_facts": [
+            "Prefers established payment processors with good developer experience (chose Stripe)",
+            "Values API versioning best practices",
+            "Interested in e-commerce platforms"
+          ],
+          "key_facts": [
+            "API versioning with /api/v1/ prefix",
+            "Stripe payment integration",
+            "ProductCard component specified",
+            "Cart persistence via localStorage"
+          ],
+          "pending_items": [
+            "Implement Stripe Checkout and webhooks",
+            "Create ProductCard component with image, title, price, add-to-cart",
+            "Implement useCart hook with localStorage persistence"
+          ]
+        }
+      },
+      {
+        "run": 3,
+        "msg_count": 14,
+        "elapsed_s": 4.88,
+        "cost_est": 0.00368,
+        "proposal_count": 4,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "All endpoints should use the /api/v1/ prefix for versioning",
+            "data": {
+              "decision": "API route versioning with /api/v1/ prefix",
+              "rationale": "Enables future API versions without breaking existing clients",
+              "topic": "api_style"
+            },
+            "description": "All ShopWave API endpoints should be prefixed with /api/v1/ for semantic versioning."
+          },
+          {
+            "type": "dependency_preference",
+            "confidence": "auto",
+            "source_quote": "Use Stripe for payment processing, it has the best developer experience",
+            "data": {
+              "package": "stripe",
+              "reason": "Best developer experience for payment processing"
+            },
+            "description": "Use Stripe as the payment processor for ShopWave."
+          },
+          {
+            "type": "design_reference",
+            "confidence": "auto",
+            "source_quote": "The product card should show image, title, price, and add-to-cart button",
+            "data": {
+              "components": [
+                "ProductCard"
+              ],
+              "description": "ProductCard displays product information and purchase action in a card layout.",
+              "color_scheme": {
+                "primary": "",
+                "bg": ""
+              }
+            },
+            "description": "ProductCard component should display image, title, price, and add-to-cart button."
+          },
+          {
+            "type": "project_convention",
+            "confidence": "auto",
+            "source_quote": "Also make sure the cart persists across page refreshes using localStorage",
+            "data": {
+              "pattern": "Cart state persisted to localStorage with useCart hook for cross-session access",
+              "scope": "frontend"
+            },
+            "description": "Cart data should persist across page refreshes using localStorage."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "ShopWave is an e-commerce platform with API routes under /api/v1/ prefix for versioning, Stripe integration for payment processing with webhooks, a ProductCard component displaying image, title, price, and add-to-cart button, and cart persistence across page refreshes using localStorage.",
+          "user_facts": [
+            "Prefers established, developer-friendly third-party services (chose Stripe for payment processing)",
+            "Values API versioning best practices",
+            "Interested in e-commerce platform development"
+          ],
+          "key_facts": [
+            "API versioning with /api/v1/ prefix",
+            "Stripe payment integration",
+            "ProductCard component with core fields",
+            "Cart persistence via localStorage"
+          ],
+          "pending_items": [
+            "Stripe webhook configuration and testing",
+            "useCart hook implementation details",
+            "Product listing and filtering features"
+          ]
+        }
+      }
+    ]
+  },
+  "C": {
+    "ground_truth": {
+      "expected_min": 0,
+      "expected_max": 1,
+      "decisions": [
+        "dependency_preference (ambiguous): Firebase"
+      ],
+      "noise_items": [
+        "relativity",
+        "cat image",
+        "philosophy",
+        "jokes",
+        "guitar"
+      ]
+    },
+    "runs": [
+      {
+        "run": 1,
+        "msg_count": 14,
+        "elapsed_s": 0.84,
+        "cost_est": 0.00368,
+        "proposal_count": 0,
+        "proposals": [],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "",
+          "user_facts": [
+            "Considering Firebase for a future project",
+            "Interest in learning guitar as an adult"
+          ],
+          "key_facts": [],
+          "pending_items": []
+        }
+      },
+      {
+        "run": 2,
+        "msg_count": 14,
+        "elapsed_s": 1.03,
+        "cost_est": 0.00368,
+        "proposal_count": 0,
+        "proposals": [],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "",
+          "user_facts": [
+            "Considering Firebase for upcoming projects",
+            "Has interest in learning guitar as an adult"
+          ],
+          "key_facts": [],
+          "pending_items": []
+        }
+      },
+      {
+        "run": 3,
+        "msg_count": 14,
+        "elapsed_s": 0.87,
+        "cost_est": 0.00368,
+        "proposal_count": 0,
+        "proposals": [],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "",
+          "user_facts": [
+            "Considering Firebase for upcoming projects",
+            "Has interest in learning guitar as an adult"
+          ],
+          "key_facts": [],
+          "pending_items": []
+        }
+      }
+    ]
+  },
+  "D": {
+    "ground_truth": {
+      "expected_min": 0,
+      "expected_max": 1,
+      "decisions": [],
+      "noise_items": [
+        "REST vs GraphQL",
+        "PostgreSQL vs SQLite",
+        "microservices",
+        "CAP theorem"
+      ]
+    },
+    "runs": [
+      {
+        "run": 1,
+        "msg_count": 12,
+        "elapsed_s": 2.24,
+        "cost_est": 0.00344,
+        "proposal_count": 0,
+        "proposals": [],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "",
+          "user_facts": [
+            "Interested in distributed systems and architecture patterns",
+            "Curious about database trade-offs and scalability approaches",
+            "Seeking to understand microservices communication patterns",
+            "Learning about API design paradigms (REST vs GraphQL)"
+          ],
+          "key_facts": [],
+          "pending_items": []
+        }
+      },
+      {
+        "run": 2,
+        "msg_count": 12,
+        "elapsed_s": 1.12,
+        "cost_est": 0.00344,
+        "proposal_count": 0,
+        "proposals": [],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "",
+          "user_facts": [
+            "Interested in distributed systems and scalability concepts",
+            "Curious about API design patterns and trade-offs",
+            "Learning about database architecture and deployment strategies"
+          ],
+          "key_facts": [],
+          "pending_items": []
+        }
+      },
+      {
+        "run": 3,
+        "msg_count": 12,
+        "elapsed_s": 1.09,
+        "cost_est": 0.00344,
+        "proposal_count": 0,
+        "proposals": [],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "",
+          "user_facts": [
+            "Interested in understanding distributed systems and scalability concepts",
+            "Curious about API design patterns and database trade-offs",
+            "Learning about microservices architecture and inter-service communication",
+            "Exploring container orchestration and infrastructure topics"
+          ],
+          "key_facts": [],
+          "pending_items": []
+        }
+      }
+    ]
+  },
+  "E1": {
+    "ground_truth": {
+      "expected_min": 1,
+      "expected_max": 2,
+      "decisions": [
+        "tech_decision: session-based auth",
+        "design_reference (borderline): login page"
+      ],
+      "noise_items": []
+    },
+    "runs": [
+      {
+        "run": 1,
+        "msg_count": 6,
+        "elapsed_s": 3.19,
+        "cost_est": 0.00272,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Use session-based authentication for this project, I think cookies are more secure",
+            "data": {
+              "decision": "Session-based authentication with httpOnly cookies",
+              "rationale": "User prioritizes security and believes cookies are more secure than alternatives",
+              "topic": "auth"
+            },
+            "description": "SecureVault will use session-based auth with httpOnly cookies instead of token-based approaches."
+          },
+          {
+            "type": "design_reference",
+            "confidence": "confirm",
+            "source_quote": "The login page should have email and password fields with remember me checkbox",
+            "data": {
+              "components": [
+                "LoginForm"
+              ],
+              "description": "Login form with email input, password input, and remember-me checkbox",
+              "color_scheme": {
+                "primary": "",
+                "bg": ""
+              }
+            },
+            "description": "LoginForm component with email, password, and remember-me checkbox fields."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "Started SecureVault password management project with session-based authentication using httpOnly cookies and a login form containing email/password fields and a remember-me checkbox.",
+          "user_facts": [
+            "Prioritizes security in project design",
+            "Prefers session-based authentication over token-based approaches",
+            "Values httpOnly cookies for enhanced security"
+          ],
+          "key_facts": [
+            "SecureVault password manager initiated",
+            "Session-based auth with httpOnly cookies selected",
+            "Login form designed with email, password, remember-me"
+          ],
+          "pending_items": [
+            "Implement login form validation",
+            "Set up session management backend",
+            "Design password storage and encryption strategy",
+            "Plan remaining SecureVault features"
+          ]
+        }
+      },
+      {
+        "run": 2,
+        "msg_count": 6,
+        "elapsed_s": 3.92,
+        "cost_est": 0.00272,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Use session-based authentication for this project, I think cookies are more secure",
+            "data": {
+              "decision": "Session-based authentication with httpOnly cookies",
+              "rationale": "User believes cookies are more secure than alternatives for this password management application",
+              "topic": "auth"
+            },
+            "description": "Use httpOnly session cookies for authentication instead of token-based approaches."
+          },
+          {
+            "type": "design_reference",
+            "confidence": "auto",
+            "source_quote": "The login page should have email and password fields with remember me checkbox",
+            "data": {
+              "components": [
+                "LoginForm"
+              ],
+              "description": "Login form containing email input, password input, and remember-me checkbox with standard layout",
+              "color_scheme": {
+                "primary": "",
+                "bg": ""
+              }
+            },
+            "description": "LoginForm component with email field, password field, and remember-me checkbox."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "Started SecureVault, a password management application. User decided to implement session-based authentication using httpOnly cookies for security, with a login page featuring email and password fields plus a remember-me checkbox.",
+          "user_facts": [
+            "Prefers session-based authentication over token-based approaches",
+            "Values security as a primary concern in project design",
+            "Interested in password management applications"
+          ],
+          "key_facts": [
+            "Session-based auth with httpOnly cookies",
+            "Login form with email, password, remember-me",
+            "SecureVault password manager project initiated"
+          ],
+          "pending_items": [
+            "Design and implement login page UI",
+            "Set up session management backend",
+            "Implement remember-me functionality",
+            "Add form validation for credentials",
+            "Define password storage and encryption strategy"
+          ]
+        }
+      },
+      {
+        "run": 3,
+        "msg_count": 6,
+        "elapsed_s": 3.06,
+        "cost_est": 0.00272,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Use session-based authentication for this project, I think cookies are more secure",
+            "data": {
+              "decision": "Session-based authentication with httpOnly cookies",
+              "rationale": "User believes cookies are more secure for authentication",
+              "topic": "auth"
+            },
+            "description": "Use session-based authentication with httpOnly cookies instead of token-based auth for SecureVault."
+          },
+          {
+            "type": "design_reference",
+            "confidence": "confirm",
+            "source_quote": "The login page should have email and password fields with remember me checkbox",
+            "data": {
+              "components": [
+                "LoginForm"
+              ],
+              "description": "Login form with email input, password input, and remember me checkbox",
+              "color_scheme": {
+                "primary": "",
+                "bg": ""
+              }
+            },
+            "description": "LoginForm component with email, password, and remember me checkbox fields."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "Started SecureVault password management project with session-based authentication using httpOnly cookies and designed a login form with email, password, and remember me checkbox.",
+          "user_facts": [
+            "Prioritizes security in project design",
+            "Prefers session-based authentication over token-based approaches",
+            "Values secure cookie handling (httpOnly)"
+          ],
+          "key_facts": [
+            "SecureVault project initiated",
+            "Session-based auth with httpOnly cookies selected",
+            "Login form: email, password, remember me"
+          ],
+          "pending_items": [
+            "Implement login page UI",
+            "Set up session management backend",
+            "Add form validation for email and password",
+            "Implement remember me functionality"
+          ]
+        }
+      }
+    ]
+  },
+  "E2": {
+    "ground_truth": {
+      "expected_min": 1,
+      "expected_max": 2,
+      "decisions": [
+        "tech_decision: JWT (supersedes session-based)",
+        "tech_decision (borderline): refresh tokens"
+      ],
+      "noise_items": []
+    },
+    "runs": [
+      {
+        "run": 1,
+        "msg_count": 6,
+        "elapsed_s": 3.32,
+        "cost_est": 0.00272,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Actually, let's switch to JWT instead of session-based auth, it's better for mobile clients",
+            "data": {
+              "decision": "Use JWT-based authentication instead of session-based auth",
+              "rationale": "Better compatibility with mobile clients",
+              "topic": "auth"
+            },
+            "description": "Switch from session-based to JWT authentication for improved mobile client support."
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Make sure we use refresh tokens with short-lived access tokens for security",
+            "data": {
+              "decision": "Implement refresh token pattern with short-lived access tokens",
+              "rationale": "Enhanced security through token rotation and limited exposure window",
+              "topic": "auth"
+            },
+            "description": "Implement refresh token pattern with 15-minute expiring access tokens for security."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "SecureVault's authentication approach was switched from session-based to JWT with a refresh token pattern. Access tokens will have a 15-minute expiration with separate refresh tokens for enhanced mobile client compatibility and security.",
+          "user_facts": [
+            "Prefers JWT over session-based authentication for mobile applications",
+            "Values security best practices like refresh token patterns"
+          ],
+          "key_facts": [
+            "Switched auth strategy to JWT",
+            "Implementing refresh token pattern",
+            "15-minute access token expiration"
+          ],
+          "pending_items": [
+            "Implement JWT token generation and validation",
+            "Set up refresh token endpoint",
+            "Configure token expiration and rotation logic"
+          ]
+        }
+      },
+      {
+        "run": 2,
+        "msg_count": 6,
+        "elapsed_s": 3.38,
+        "cost_est": 0.00272,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Actually, let's switch to JWT instead of session-based auth, it's better for mobile clients",
+            "data": {
+              "decision": "Use JWT-based authentication with refresh tokens instead of session-based auth",
+              "rationale": "Better compatibility with mobile clients",
+              "topic": "auth"
+            },
+            "description": "SecureVault will use JWT tokens with refresh token pattern for authentication."
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Make sure we use refresh tokens with short-lived access tokens for security",
+            "data": {
+              "decision": "Implement refresh token pattern with 15-minute access token expiration",
+              "rationale": "Balances security with usability by using short-lived access tokens and refresh tokens",
+              "topic": "auth"
+            },
+            "description": "Access tokens expire in 15 minutes; refresh tokens enable long-lived sessions securely."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "SecureVault's authentication approach was updated from session-based to JWT-based auth. The implementation will use refresh tokens paired with short-lived access tokens (15-minute expiration) to balance security and mobile client compatibility.",
+          "user_facts": [
+            "Prefers JWT over session-based authentication for mobile applications",
+            "Values security practices like refresh token patterns and short-lived tokens"
+          ],
+          "key_facts": [
+            "JWT auth strategy selected for SecureVault",
+            "Refresh token pattern implemented",
+            "15-minute access token expiration configured"
+          ],
+          "pending_items": [
+            "Implement JWT token generation and validation endpoints",
+            "Configure refresh token rotation logic",
+            "Test auth flow with mobile clients"
+          ]
+        }
+      },
+      {
+        "run": 3,
+        "msg_count": 6,
+        "elapsed_s": 3.51,
+        "cost_est": 0.00272,
+        "proposal_count": 2,
+        "proposals": [
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Actually, let's switch to JWT instead of session-based auth, it's better for mobile clients",
+            "data": {
+              "decision": "Use JWT authentication with refresh token pattern",
+              "rationale": "Better compatibility with mobile clients and improved security through token expiration",
+              "topic": "auth"
+            },
+            "description": "SecureVault will use JWT with refresh tokens instead of session-based authentication for mobile client compatibility."
+          },
+          {
+            "type": "tech_decision",
+            "confidence": "auto",
+            "source_quote": "Make sure we use refresh tokens with short-lived access tokens for security",
+            "data": {
+              "decision": "Implement refresh token pattern with short-lived access tokens (15-minute expiration)",
+              "rationale": "Reduces exposure window if access token is compromised while maintaining session continuity",
+              "topic": "auth"
+            },
+            "description": "Access tokens expire after 15 minutes, requiring refresh token exchange for continued authenticated requests."
+          }
+        ],
+        "noise_leaked": [],
+        "summary_4fields": {
+          "project_summary": "SecureVault's authentication strategy was updated from session-based to JWT with a refresh token pattern. Short-lived access tokens (15-minute expiration) will be paired with refresh tokens for improved mobile compatibility and security.",
+          "user_facts": [
+            "Prefers JWT over session-based authentication for mobile client support",
+            "Values security practices like token expiration and refresh token patterns"
+          ],
+          "key_facts": [
+            "Switched auth strategy to JWT",
+            "Implementing refresh token pattern",
+            "15-minute access token expiration"
+          ],
+          "pending_items": [
+            "Implement refresh token endpoint",
+            "Set up JWT signing/verification logic",
+            "Configure token expiration times"
+          ]
+        }
+      }
+    ]
+  }
+}
